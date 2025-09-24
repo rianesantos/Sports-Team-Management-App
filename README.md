@@ -1,42 +1,60 @@
-# Sports-Team-Management-App
-🏅 Sports Team Management App
+# 🏅 Sports Team Management App
 
-Este projeto é um sistema completo para gestão de equipes esportivas, desenvolvido para centralizar as principais necessidades de um time em um só lugar.
+Aplicação completa para **gestão de equipes esportivas**, centralizando todas as principais necessidades de um time em um único sistema.
 
-🚀 Funcionalidades Implementadas
+---
 
-Todas as funcionalidades principais do projeto foram concluídas com sucesso:
+## 🚀 Funcionalidades Implementadas
 
-Team Roster Management – Gerenciamento do elenco do time, incluindo perfis de jogadores, posições e estatísticas.
+Todas as funcionalidades principais foram concluídas com sucesso:
 
-Match Scheduling – Organização e agendamento de partidas e torneios.
+1. **Team Roster Management**  
+   ➝ Gerenciamento do elenco do time (perfis de jogadores, posições e estatísticas).
 
-Performance Tracking – Monitoramento e análise de métricas de desempenho individuais e coletivas.
+2. **Match Scheduling**  
+   ➝ Organização e agendamento de partidas e torneios.
 
-Injury and Health Monitoring – Acompanhamento de relatórios de saúde e lesões dos jogadores.
+3. **Performance Tracking**  
+   ➝ Monitoramento e análise de métricas de desempenho individuais e coletivas.
 
-Training Schedule Management – Planejamento e gerenciamento de sessões de treino.
+4. **Injury and Health Monitoring**  
+   ➝ Acompanhamento de relatórios de saúde e lesões dos jogadores.
 
-Equipment Inventory Management – Controle de inventário e gestão de equipamentos esportivos.
+5. **Training Schedule Management**  
+   ➝ Planejamento e gerenciamento de sessões de treino.
 
-Player Recruitment – Gerenciamento do processo de prospecção e recrutamento de novos jogadores.
+6. **Equipment Inventory Management**  
+   ➝ Controle de inventário e gestão de equipamentos esportivos.
 
-Fan Engagement Tools (parcial) – Implementação de recursos para interação com fãs (como enquetes).
+7. **Player Recruitment**  
+   ➝ Gerenciamento do processo de prospecção e recrutamento de novos jogadores.
 
-Financial Management – Gestão financeira, incluindo orçamentos e despesas.
+8. **Fan Engagement Tools (parcial)**  
+   ➝ Recursos para interação com fãs (ex.: enquetes).
 
-Media and Public Relations – Administração de comunicados de imprensa e atividades de relações públicas.
+9. **Financial Management**  
+   ➝ Gestão financeira, incluindo orçamentos e despesas.
 
-✅ Todas as funcionalidades acima estão operacionais.
+10. **Media and Public Relations**  
+    ➝ Administração de comunicados de imprensa e atividades de relações públicas.
 
-⚠️ Funcionalidade não implementada
+✅ Todas as funcionalidades acima estão **operacionais**.
 
-Integração com Redes Sociais (parte do módulo de Fan Engagement Tools)
+---
 
-Essa funcionalidade não foi incluída porque a integração dependia do uso de APIs de redes sociais (como Twitter, Facebook e Instagram).
+## ⚠️ Funcionalidade não implementada
 
-Não foi possível finalizar essa parte devido à complexidade de entender as regras de autenticação, permissões e fluxos de API dessas plataformas.
+- **Integração com Redes Sociais**  
+  - Parte do módulo **Fan Engagement Tools** que dependia de APIs externas (Twitter, Facebook, Instagram).  
+  - Não foi incluída devido à complexidade de autenticação, permissões e fluxos de API dessas plataformas.  
+  - O sistema foi desenvolvido de forma **modular**, portanto essa integração poderá ser adicionada futuramente sem impacto nas demais funcionalidades.
 
-📌 Observação
+---
 
-O sistema foi desenvolvido de forma modular, então a integração com redes sociais pode ser adicionada futuramente sem impacto nas demais funcionalidades. 
+## 📦 Instalação e Execução
+
+Clone este repositório:
+
+```bash
+git clone https://github.com/seu-usuario/sports-team-management-app.git
+cd sports-team-management-app
