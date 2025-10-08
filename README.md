@@ -50,15 +50,6 @@ Todas as funcionalidades principais foram concluídas com sucesso:
   - O sistema foi desenvolvido de forma **modular**, portanto essa integração poderá ser adicionada futuramente sem impacto nas demais funcionalidades.
 
 ---
-
-## 📦 Instalação e Execução
-
-Clone este repositório:
-
-```bash
-git clone https://github.com/seu-usuario/sports-team-management-app.git
-cd sports-team-management-app
-
 # 🏆 Sports Team Management App
 
 Este projeto é um sistema de gerenciamento de console para equipes esportivas, focado em demonstrar a aplicação de **Padrões de Projeto (Design Patterns)** para construir uma arquitetura de software modular, robusta e fácil de manter.
@@ -90,3 +81,12 @@ Estes padrões focam na comunicação eficiente e na atribuição de responsabil
 ## 📁 Estrutura do Projeto
 
 O projeto segue uma arquitetura modular clara:
+---
+
+## 📦 Instalação e Execução
+
+Clone este repositório:
+
+```bash
+git clone https://github.com/seu-usuario/sports-team-management-app.git
+cd sports-team-management-app
