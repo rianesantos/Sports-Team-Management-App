@@ -1,0 +1,21 @@
+# Ambiente virtual
+venv/
+.env/
+
+# Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Configurações locais
+.vscode/
+.idea/
+
+# Arquivos temporários
+*.log
+*.tmp
+*.bak
+
+# Outros
+desktop.ini
