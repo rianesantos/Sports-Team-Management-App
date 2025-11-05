@@ -90,8 +90,20 @@ Estes padrões explicam como montar objetos e classes em estruturas maiores.
 
 * **Composite:**
     Permite tratar objetos individuais e coleções de objetos de forma uniforme. A classe `Tournament` (em `models.py`) herda da mesma classe base `Event` que `Match` e `Training`. O `Tournament` pode conter uma lista de outros `Event`s (filhos) e seu método `details()` chama os `details()` de seus filhos. Isso permite que a função `list_events` trate um torneio e uma partida da mesma maneira.
+  
+---
 
-## 📁 Estrutura do Projeto
+## 🛡️ Tratamento de Exceções (Exception Handling)
+
+Para garantir a robustez e a estabilidade da aplicação, foi implementada uma estratégia de tratamento de exceções em múltiplas camadas. Isso previne que entradas inválidas do usuário ou falhas na lógica de negócio causem o colapso do programa (`crash`).
+
+A lógica é dividida da seguinte forma:
+
+| Camada | Arquivo(s) | Responsabilidade |
+| :--- | :--- | :--- |
+| **1. Modelos (Regras de Negócio)** | `models.py` | **Levanta (Raise) Exceções:** As classes de modelo (ex: `Player`, `Account`, `Event`) validam os dados em seus construtores e setters. Se uma regra de negócio é violada (ex: nome vazio, idade inválida, saldo insuficiente), uma exceção (`ValueError` ou `TypeError`) é ativamente lançada. |
+| **2. Builders e Factories** | `player_builders.py`, `match_factory.py`, etc. | **Captura Imediata (Entrada):** Captura erros de *conversão de tipo* (`ValueError`) que ocorrem quando o usuário digita texto em um campo numérico (ex: `int(input("Idade: "))`). O Builder/Factory informa o erro ao usuário e impede que dados inválidos prossigam para a lógica de negócio. |
+| **3. Serviços (Orquestração)** | `services.py` | **Captura Final (Safety Net):** Esta é a principal camada de segurança. Cada função de serviço (ex: `add_player`, `register_income`, `schedule_match`) envolve a lógica de execução em um bloco `try...except` amplo. Este bloco captura as exceções levantadas pelos Modelos ou Builders, exibe uma mensagem de erro amigável ao usuário e permite que o programa continue funcionando sem travar. |
 ---
 
 ## 📦 Instalação e Execução
